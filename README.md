@@ -23,6 +23,14 @@ The github actions will trigger on a pull request creation and merge.
 
 NOTE: make sure you are creating pull requests/ merging within your fork
 
+#### Security 
+To adopt checkov of bridgecrew.io, a static scanning tool for IaC and SCA (Software Composition Analysis), in CI/CD pipeline to automatically 
+detect the misconfiguration in IaC file and  Common Vulnerabilities and Exposures (CVEs) in the open source packages and images in the provision. 
+
+ - One github action workflow added for SCA and IaC scanning : Checkov.yml will be triggered when there is a git push on `main` branch.
+ - Free Tier has reduced features and 50 resource limitation 
+ - VCS Integration for additional features
+
 
 #### Testing
 For how to use the test associated to this project, please check the README file under `functional-tests`
@@ -32,4 +40,4 @@ For how to use the test associated to this project, please check the README file
 
 Thanks to BrowserStack for Testing Tool support via OpenSource Licensing ![BrowserStack](docs/images/browserstack-logo-white-small.png)
 
-
+[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/bruce-wh-li/startup-sample-project-aws-serverless/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=bruce-wh-li%2Fstartup-sample-project-aws-serverless&benchmark=CIS+AWS+V1.2)[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/bruce-wh-li/startup-sample-project-aws-serverless/cis_aws_13)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=bruce-wh-li%2Fstartup-sample-project-aws-serverless&benchmark=CIS+AWS+V1.3)[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/bruce-wh-li/startup-sample-project-aws-serverless/iso)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=bruce-wh-li%2Fstartup-sample-project-aws-serverless&benchmark=ISO27001)
